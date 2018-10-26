@@ -24,7 +24,7 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func addBottomSheetView(scrollable: Bool? = true) {
+    func addBottomSheetView(scrollable: Bool? = false) {
         let bottomSheetVC = scrollable! ? ScrollableBottomSheetViewController() : BottomSheetViewController()
         
         self.addChildViewController(bottomSheetVC)
